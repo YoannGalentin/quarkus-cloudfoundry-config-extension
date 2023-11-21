@@ -1,0 +1,12 @@
+name: Cloudfoundry Config Extension
+description: Read and parse Cloudfoundry config (VCAP_SERVICES)
+metadata:
+  categories:
+    - "config"
+    - "configuration"
+    - "cloudfoundry"
+  name: cloudfoundry-config-extension
+  languages:
+    - "java"
+  artifact: ${project.groupId}:${project.artifactId}:${project.version}
+  status: "experimental"

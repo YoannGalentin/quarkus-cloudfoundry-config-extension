@@ -1,0 +1,5 @@
+name: quarkus-cloudfoundry-config-extension
+title: Quarkus Cloudfoundry Config Extension
+version: dev
+nav:
+  - modules/ROOT/nav.adoc
