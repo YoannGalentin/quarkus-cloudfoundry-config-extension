@@ -10,8 +10,11 @@ import java.util.Map;
 import org.eclipse.microprofile.config.spi.ConfigSource;
 import org.jboss.logging.Logger;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import io.pivotal.cfenv.core.CfService;
-import io.pivotal.cfenv.core.JsonIoConverter;
+//import io.pivotal.cfenv.core.JsonIoConverter;
 import io.smallrye.config.ConfigSourceContext;
 import io.smallrye.config.ConfigSourceFactory;
 
@@ -41,7 +44,18 @@ public class QuarkusCloudfoundryConfigSourceFactory
 
         List<CfService> cfServices = new ArrayList<>();
 
-        Map<String, List<Map<String, Object>>> rawServicesMap = JsonIoConverter.jsonToJavaWithListsAndInts(vcapServicesJson);
+        // TODO: wait JDK17 support for quarkus exntesion
+        // Map<String, List<Map<String, Object>>> rawServicesMap = JsonIoConverter.jsonToJavaWithListsAndInts(vcapServicesJson);
+
+        Map<String, List<Map<String, Object>>> rawServicesMap;
+
+        try {
+            rawServicesMap = (Map) new ObjectMapper().readValue(vcapServicesJson, Map.class);
+        } catch (JsonProcessingException e) {
+            log.error("error during json parsing of the env var 'VCAP_SERVICES'");
+            return Collections.emptyList();
+        }
+
         rawServicesMap.values().stream().flatMap(Collection::stream).forEach((serviceData) -> {
             cfServices.add(new CfService(serviceData));
         });
