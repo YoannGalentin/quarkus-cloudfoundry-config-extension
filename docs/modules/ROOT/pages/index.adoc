@@ -13,7 +13,7 @@ For instance, with Maven, add the following dependency to your POM file:
 [source,xml,subs=attributes+]
 ----
 <dependency>
-    <groupId>io.quarkiverse.quarkus-cloudfoundry-config-extension</groupId>
+    <groupId>io.github.yoanngalentin</groupId>
     <artifactId>quarkus-cloudfoundry-config-extension</artifactId>
     <version>{project-version}</version>
 </dependency>
