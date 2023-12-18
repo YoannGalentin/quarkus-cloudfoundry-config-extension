@@ -66,11 +66,11 @@ public class QuarkusCloudfoundryConfigSourceFactory
             String label = cfService.getLabel();
             String name = cfService.getName();
 
-            Map<String, String> credentials = (Map<String, String>) cfService.getCredentials().getMap().get("credentials");
+            Map<String, Object> credentials = (Map<String, Object>) cfService.getCredentials().getMap().get("credentials");
 
             if (credentials != null && !credentials.isEmpty()) {
                 credentials.forEach((key, value) -> {
-                    propertyMap.put(PROPERTY_PREFIX + label + "." + name + "." + key, value);
+                    propertyMap.put(PROPERTY_PREFIX + label + "." + name + "." + key, value.toString());
                 });
             }
         });

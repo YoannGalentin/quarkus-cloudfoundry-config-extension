@@ -9,7 +9,7 @@
     </parent>
     <groupId>io.github.yoanngalentin</groupId>
     <artifactId>quarkus-cloudfoundry-config-extension-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Quarkus Cloudfoundry Config Extension - Parent</name>
     <modules>
@@ -18,9 +18,9 @@
         <module>docs</module>
     </modules>
     <scm>
-        <connection>scm:git:git@github.com:quarkiverse/quarkus-cloudfoundry-config-extension.git</connection>
-        <developerConnection>scm:git:git@github.com:quarkiverse/quarkus-cloudfoundry-config-extension.git</developerConnection>
-        <url>https://github.com/quarkiverse/quarkus-cloudfoundry-config-extension</url>
+        <connection>scm:git:git@github.com:yoanngalentin/quarkus-cloudfoundry-config-extension.git</connection>
+        <developerConnection>scm:git:git@github.com:yoanngalentin/quarkus-cloudfoundry-config-extension.git</developerConnection>
+        <url>https://github.com/yoanngalentin/quarkus-cloudfoundry-config-extension</url>
     </scm>
     <properties>
         <compiler-plugin.version>3.11.0</compiler-plugin.version>
