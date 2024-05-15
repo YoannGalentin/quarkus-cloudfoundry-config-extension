@@ -1,6 +1,6 @@
 # Quarkus Cloudfoundry Config Extension
 
-[![Version](https://img.shields.io/maven-central/v/io.quarkiverse.quarkus-cloudfoundry-config-extension/quarkus-cloudfoundry-config-extension?logo=apache-maven&style=flat-square)](https://search.maven.org/artifact/io.quarkiverse.quarkus-cloudfoundry-config-extension/quarkus-cloudfoundry-config-extension)
+[![Version](https://img.shields.io/maven-central/v/io.github.yoanngalentin/quarkus-cloudfoundry-config-extension?logo=apache-maven&style=flat-square)](https://search.maven.org/artifact/io.github.yoanngalentin/quarkus-cloudfoundry-config-extension)
 
 Quarkus Extension to read and parse Cloud Foundry environment variables
 
