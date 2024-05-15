@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.github.yoanngalentin</groupId>
     <artifactId>quarkus-cloudfoundry-config-extension-parent</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
   </parent>
   <artifactId>quarkus-cloudfoundry-config-extension</artifactId>
   <name>Quarkus Cloudfoundry Config Extension - Runtime</name>
