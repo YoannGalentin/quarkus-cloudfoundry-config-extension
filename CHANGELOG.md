@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.6
+
+* Upgraded to Quarkus 3.17.4
+
 ## 0.0.5
 
 * Upgraded to Quarkus 3.12.3
