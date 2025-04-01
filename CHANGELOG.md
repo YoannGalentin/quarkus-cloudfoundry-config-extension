@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.8
+
+* Upgraded to quarkus.version from 3.18.3 to 3.21.0
+* Upgraded to io.pivotal.cfenv:java-cfenv from 3.3.0 to 3.4.0
+* Upgraded to io.quarkiverse:quarkiverse-parent from 18 to 19
+* Upgraded to org.apache.maven.plugins:maven-compiler-plugin from 3.13.0 to 3.14.0
+
 ## 0.0.7
 
 * Upgraded to Quarkus 3.18.3
