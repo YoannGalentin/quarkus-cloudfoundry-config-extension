@@ -2,6 +2,12 @@
 
 ## 0.0.8
 
+* Upgraded to quarkus.version from 3.21.0 to 3.26.2
+* Upgraded to io.pivotal.cfenv:java-cfenv from 3.4.0 to 3.5.0
+* Upgraded to io.quarkiverse:quarkiverse-parent from 19 to 20
+
+## 0.0.8
+
 * Upgraded to quarkus.version from 3.18.3 to 3.21.0
 * Upgraded to io.pivotal.cfenv:java-cfenv from 3.3.0 to 3.4.0
 * Upgraded to io.quarkiverse:quarkiverse-parent from 18 to 19
