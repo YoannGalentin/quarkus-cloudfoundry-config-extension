@@ -20,8 +20,20 @@
         <connection>scm:git:git@github.com:yoanngalentin/quarkus-cloudfoundry-config-extension.git</connection>
         <developerConnection>scm:git:git@github.com:yoanngalentin/quarkus-cloudfoundry-config-extension.git</developerConnection>
         <url>https://github.com/yoanngalentin/quarkus-cloudfoundry-config-extension</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <name>Sonatype Central Snapshot Repository</name>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>oss.sonatype</id>
+            <name>Sonatype Central Staging Repository</name>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
     <properties>
         <compiler-plugin.version>3.14.0</compiler-plugin.version>
         <maven.compiler.release>17</maven.compiler.release>
