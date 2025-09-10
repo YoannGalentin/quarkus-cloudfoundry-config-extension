@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.8
+## 0.0.9
 
 * Upgraded to quarkus.version from 3.21.0 to 3.26.2
 * Upgraded to io.pivotal.cfenv:java-cfenv from 3.4.0 to 3.5.0
