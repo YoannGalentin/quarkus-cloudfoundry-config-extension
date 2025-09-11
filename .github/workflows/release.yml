@@ -44,8 +44,8 @@ jobs:
           servers: |
             [{
                 "id": "central",
-                "username": "${{ secrets.OSSRH_USERNAME }}",
-                "password": "${{ secrets.OSSRH_TOKEN }}"
+                "username": ${{ secrets.OSSRH_USERNAME }},
+                "password": ${{ secrets.OSSRH_TOKEN }}
             }]
 
       - name: Set up JDK 17
