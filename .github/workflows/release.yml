@@ -73,7 +73,6 @@ jobs:
 
       - name: Maven release ${{steps.metadata.outputs.current-version}}
         run: |
-          mvn -B release:prepare -Prelease -DreleaseVersion=${{steps.metadata.outputs.current-version}} -DdevelopmentVersion=${{steps.metadata.outputs.next-version}}
           mvn deploy
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
