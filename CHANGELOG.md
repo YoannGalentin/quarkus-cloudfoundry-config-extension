@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.0.11
+
+* Add logs to add information to know loading properties from cfenv
+
+## 0.0.10
+
+* Upgraded to quarkus.version from 3.26.2 to 3.28.3
+* Upgraded to org.apache.maven.plugins:maven-compiler-plugin from 3.14.0 to 3.14.1
+
 ## 0.0.9
 
 * Upgraded to quarkus.version from 3.21.0 to 3.26.2
