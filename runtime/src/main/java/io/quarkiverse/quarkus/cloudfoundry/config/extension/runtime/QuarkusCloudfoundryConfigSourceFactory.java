@@ -66,6 +66,7 @@ public class QuarkusCloudfoundryConfigSourceFactory
                 });
             }
 
+            log.info("QuarkusCloudfoundryConfig: loaded VCAP configurations '" + label + " " + name + "' into QuarkusConfigSource (properties=" + propertyMap.keySet() + ")");
         });
 
         return Collections.singletonList(new QuarkusCloudfoundryConfigSource("cloudfoundry-config", propertyMap, 400));
